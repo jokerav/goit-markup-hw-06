@@ -396,11 +396,12 @@
       </button>
       <form class="modal-form" action="">
         <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
-        <Label>Имя<input class="modal-input" type="text"></Label>
-        <Label>Телефон<input class="modal-input" type="text"></Label>
-        <Label>Почта<input class="modal-input" type="text"></Label>
-        <Label>Комментарий<textarea class="modal-input" rows="10"></textarea></Label>
-        <Label><input type="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></Label>
+        <Label>Имя<input class="modal-input" type="text" name="user-name"></Label>
+        <Label>Телефон<input class="modal-input" type="tel" name="user-phone"></Label>
+        <Label>Почта<input class="modal-input" type="mail" name="user-mail"></Label>
+        <Label>Комментарий<textarea class="modal-input" rows="10" name="comment"></textarea></Label>
+        <input type="checkbox" id="accept-policy">
+        <Label for="accept-policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></Label>
         <button class="form-btn" type="submit">Отправить</button>
       </form>
     </div>

@@ -726,7 +726,8 @@ h5 {
   pointer-events: none;
 }
 .modal-form {
-  /* padding: 40px; */
+  display: flex;
+  flex-direction: column;
 }
 .modal-header {
   color: var(--secondary-text-color);
@@ -739,7 +740,11 @@ h5 {
 .modal-input {
   display: block;
   width: 100%;
+  border: 1px solid var(--accent);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .form-btn {
   display: block;
+  align-self: center;
 }
