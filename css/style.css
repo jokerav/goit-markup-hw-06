@@ -701,7 +701,7 @@ h5 {
     opacity var(--transition-duration) var(--timing-function),
     visibility var(--transition-duration) var(--timing-function); */
 }
-.modal-btn {
+.modal-close {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -714,8 +714,30 @@ h5 {
   align-items: center;
   justify-content: center;
 }
+.modal-close:hover .modal-close-icon,
+.modal-close:focus .modal-close-icon {
+  fill: var(--accent);
+}
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+.modal-form {
+  /* padding: 40px; */
+}
+.modal-header {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.modal-input {
+  display: block;
+  width: 100%;
+}
+.form-btn {
+  display: block;
 }

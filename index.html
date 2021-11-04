@@ -389,17 +389,19 @@
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button type="button" class="modal-btn" data-modal-close>
+      <button type="button" class="modal-close" data-modal-close>
         <svg class="modal-close-icon" width="18px" height="18px">
           <use href="./images/icons/symbol-defs.svg#icon-close-modal"></use>
         </svg>
       </button>
-      <form action="">
+      <form class="modal-form" action="">
         <h4 class="modal-header">Оставьте свои данные, мы вам перезвоним</h4>
-        <Label>Имя<input type="text"></Label>
-        <Label>Телефон<input type="text"></Label>
-        <Label>Почта<input type="text"></Label>
-        <Label>Комментарий<input type="text"></Label>
+        <Label>Имя<input class="modal-input" type="text"></Label>
+        <Label>Телефон<input class="modal-input" type="text"></Label>
+        <Label>Почта<input class="modal-input" type="text"></Label>
+        <Label>Комментарий<textarea class="modal-input" rows="10"></textarea></Label>
+        <Label><input type="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></Label>
+        <button class="form-btn" type="submit">Отправить</button>
       </form>
     </div>
   </div>
