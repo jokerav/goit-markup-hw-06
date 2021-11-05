@@ -760,9 +760,10 @@ h5 {
   border-radius: 4px;
   transition: color var(--transition-duration) var(--timing-function);
 }
-.modal-input-label:not(:last-child) {
+.modal-input:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .modal-input-icon {
   position: absolute;
   top: 50%;
