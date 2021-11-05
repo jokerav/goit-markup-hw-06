@@ -63,6 +63,7 @@ img {
   --social-items-our-client: #afb1b8;
   --dooing-overlay: rgba(47, 48, 58, 0.8);
   --exemples-overlay: rgba(33, 150, 243, 0.9);
+  --input: rgba(33, 33, 33, 0.2);
   --transition-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -736,13 +737,44 @@ h5 {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+.input-container {
+  position: relative;
+  display: block;
+}
+.modal-input-label {
+  font-style: 14px;
+  line-height: 1.66;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 .modal-input {
   display: block;
   width: 100%;
-  border: 1px solid var(--accent);
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid var(--input);
   box-sizing: border-box;
   border-radius: 4px;
+  transition: color var(--transition-duration) var(--timing-function);
+}
+.modal-input-label:not(:last-child) {
+  margin-bottom: 10px;
+}
+.modal-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill var(--transition-duration) var(--timing-function);
+}
+.modal-input:focus {
+  border-color: var(--accent);
+}
+.modal-input:focus + .modal-input-icon {
+  fill: var(--accent);
 }
 .form-btn {
   display: block;

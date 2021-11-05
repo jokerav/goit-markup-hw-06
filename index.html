@@ -396,10 +396,28 @@
       </button>
       <form class="modal-form" action="">
         <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
-        <Label>Имя<input class="modal-input" type="text" name="user-name"></Label>
-        <Label>Телефон<input class="modal-input" type="tel" name="user-phone"></Label>
-        <Label>Почта<input class="modal-input" type="mail" name="user-mail"></Label>
-        <Label>Комментарий<textarea class="modal-input" rows="10" name="comment"></textarea></Label>
+        <Label class="modal-input-label">Имя<span class="input-container"><input class="modal-input" type="text"
+              name="user-name">
+            <svg class="modal-input-icon" width="18px" height="18px">
+              <use href="../images/icons/symbol-defs.svg#icon-person-black"></use>>
+            </svg>
+          </span></Label>
+        <Label class="modal-input-label">Телефон<span class="input-container"><input class="modal-input" type="tel"
+              name="user-phone">
+            <svg class="modal-input-icon" width="18px" height="18px">
+              <use href="../images/icons/symbol-defs.svg#icon-phone-black"></use>>
+            </svg>
+          </span>
+        </Label>
+        <Label class="modal-input-label">Почта<span class="input-container"><input class="modal-input" type="mail"
+              name="user-mail">
+            <svg class="modal-input-icon" width="18px" height="18px">
+              <use href="../images/icons/symbol-defs.svg#icon-email-black"></use>>
+            </svg>
+          </span>
+        </Label>
+        <Label class="modal-input-label">Комментарий<textarea class="modal-input" rows="10"
+            name="comment"></textarea></Label>
         <input type="checkbox" id="accept-policy">
         <Label for="accept-policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></Label>
         <button class="form-btn" type="submit">Отправить</button>
