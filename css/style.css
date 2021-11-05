@@ -63,12 +63,13 @@ img {
   --social-items-our-client: #afb1b8;
   --dooing-overlay: rgba(47, 48, 58, 0.8);
   --exemples-overlay: rgba(33, 150, 243, 0.9);
+  --input-plaсeholder: color: rgba(117, 117, 117, 0.5);
   --input: rgba(33, 33, 33, 0.2);
   --transition-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -739,12 +740,15 @@ h5 {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
+.form-inputs{
+  margin-bottom: 20px;
+}
 .input-container {
   position: relative;
   display: block;
 }
 .modal-input-label {
-  font-style: 14px;
+  font-size: 14px;
   line-height: 1.66;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
@@ -773,9 +777,25 @@ h5 {
 }
 .modal-input:focus {
   border-color: var(--accent);
+  outline: none;
 }
 .modal-input:focus + .modal-input-icon {
   fill: var(--accent);
+}
+.modal-comment {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+
+}
+.modal-comment::placeholder {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+  color: var(--input-plaсeholder);
+  font-size: 14px;
+  line-height: 1.66;
+              letter-spacing: 0.01em;
 }
 .form-btn {
   display: block;
