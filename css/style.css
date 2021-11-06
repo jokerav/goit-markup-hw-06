@@ -872,14 +872,14 @@ h5 {
   display: inline-block;
   width: 16px;
   height: 15px;
-  background-image: url('/images/icons/check_square.svg');
+  background-image: url('./images/icons/check_square.svg');
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
   /* outline: 1px solid tomato; */
 }
 .form-checkbox:checked + .checkbox-label::before {
-  background-image: url('/images/icons/check.svg');
+  background-image: url('./images/icons/check.svg');
 }
 .form-checkbox:focus + .checkbox-label::before {
   outline: 2px solid var(--accent);
