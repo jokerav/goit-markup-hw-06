@@ -864,10 +864,13 @@ h5 {
 }
 .checkbox-label::before {
   content: '';
-  background-image: url(./images/icons/symbol-defs.svg#icon-email-black);
-  display: block;
+  display: inline-block;
   width: 16px;
   height: 15px;
+  background-image: url('./images/icons/symbol-defs.svg#icon-check');
+  cursor: pointer;
+  /* fill: var(--secondary-text-color); */
+  /* background-color: darkolivegreen; */
 }
 .policy-link {
   font-size: 14px;
