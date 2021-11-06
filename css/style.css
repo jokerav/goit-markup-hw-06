@@ -862,17 +862,30 @@ h5 {
 .checkbox-label {
   margin-bottom: 30px;
 }
+.checkbox-icon {
+  /* position: relative; */
+  /* opacity: 1; */
+}
 .checkbox-label::before {
   content: '';
+  /* position: absolute; */
   display: inline-block;
   width: 16px;
   height: 15px;
-  background-image: url('../images/icons/symbol-defs.svg#icon-phone-black');
+  background-image: url('/images/icons/check_square.svg');
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
-  /* fill: var(--secondary-text-color); */
-  /* background-color: darkolivegreen; */
+  /* outline: 1px solid tomato; */
+}
+.form-checkbox:checked + .checkbox-label::before {
+  background-image: url('/images/icons/check.svg');
+}
+.form-checkbox:focus + .checkbox-label::before {
+  outline: 2px solid var(--accent);
+}
+.form-checkbox:checked:focus + .checkbox-label::before {
+  outline: none;
 }
 .policy-link {
   font-size: 14px;
