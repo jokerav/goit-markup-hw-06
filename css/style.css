@@ -867,8 +867,10 @@ h5 {
   display: inline-block;
   width: 16px;
   height: 15px;
-  background-image: url('./images/icons/symbol-defs.svg#icon-check');
+  background-image: url('../images/icons/symbol-defs.svg#icon-phone-black');
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* fill: var(--secondary-text-color); */
   /* background-color: darkolivegreen; */
 }
