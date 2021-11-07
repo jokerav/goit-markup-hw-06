@@ -540,6 +540,7 @@ h5 {
 }
 .subscribe-input {
   width: 100%;
+  min-width: 300px;
   margin-right: 12px;
   color: var(--background-hero);
   padding: 15px;
