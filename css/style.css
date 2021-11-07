@@ -458,24 +458,29 @@ h5 {
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-logo-adress {
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 .footer-social {
-  margin-right: 95px;
+  /* margin-right: 90px; */
 }
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
 }
+
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-adress {
   color: var(--background-primary);
   font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
 }
@@ -524,6 +529,13 @@ h5 {
   background-color: var(--accent);
 }
 .subscribe {
+  /* width: 100%; */
+}
+.subscribe-form {
+  width: 100%;
+}
+.subscribe-container {
+  display: flex;
   width: 100%;
 }
 .subscribe-input {
@@ -538,10 +550,7 @@ h5 {
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--background-hero);
 }
-.subscribe-container {
-  display: flex;
-  /* align-items: center; */
-}
+
 .subscribe-btn {
   display: flex;
   justify-content: center;
