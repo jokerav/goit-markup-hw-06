@@ -561,6 +561,11 @@ h5 {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
 }
+.subscribe-btn:focus,
+.subscribe-btn:hover {
+  background-color: var(--hero-btn-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 .subscribe-text {
   margin-right: 12px;
 }
@@ -570,6 +575,11 @@ h5 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: inherit;
+  transition-property: border var(--transition-duration) var(--timing-function);
+}
+.subscribe-input:focus {
+  outline: none;
+  border: 1px solid var(--accent);
 }
 /* ---------------Секция клиенты--------------- */
 .clients-list {
@@ -606,10 +616,6 @@ h5 {
   transition-timing-function: var(--timing-function);
 }
 
-/* .client-link:hover .client-icon,
-.client-link:focus .client-icon {
-  fill: var(--accent);
-} */
 .client-link:hover,
 .client-link:focus {
   border: 1px solid var(--accent);
@@ -781,6 +787,9 @@ h5 {
   justify-content: center;
   transition: color var(--transition-duration) var(--timing-function);
 }
+.modal-close-icon {
+  transition: fill var(--transition-duration) var(--timing-function);
+}
 .modal-close:hover .modal-close-icon,
 .modal-close:focus .modal-close-icon {
   fill: currentColor;
@@ -825,12 +834,13 @@ h5 {
   border: 1px solid var(--input);
   box-sizing: border-box;
   border-radius: 4px;
-  transition: color var(--transition-duration) var(--timing-function);
+  transition: color var(--transition-duration) var(--timing-function),
+    border-color var(--transition-duration) var(--timing-function) outline
+      var(--transition-duration) var(--timing-function);
 }
 .modal-input:not(:last-child) {
   margin-bottom: 10px;
 }
-
 .modal-input-icon {
   position: absolute;
   top: 50%;
@@ -849,6 +859,10 @@ h5 {
   height: 120px;
   padding: 12px 16px;
   resize: none;
+  font-size: 14px;
+  line-height: 1.66;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
 }
 .modal-comment::placeholder {
   font-family: Roboto;
@@ -874,9 +888,6 @@ h5 {
   height: 15px;
   background-image: url('../images/icons/check_square.svg');
   cursor: pointer;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* outline: 1px solid tomato; */
 }
 .form-checkbox:checked + .checkbox-label::before {
   background-image: url('../images/icons/check.svg');
@@ -915,7 +926,8 @@ h5 {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
 }
-.form-btn {
+.form-btn:focus,
+.form-btn:hover {
   background-color: var(--hero-btn-hover);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
