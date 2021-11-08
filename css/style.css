@@ -828,6 +828,7 @@ h5 {
 .input-container {
   position: relative;
   display: block;
+  margin-top: 4px;
 }
 .modal-input-label {
   font-size: 12px;
