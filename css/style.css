@@ -461,12 +461,6 @@ h5 {
   justify-content: space-between;
 }
 
-.footer-logo-adress {
-  /* margin-right: 70px; */
-}
-.footer-social {
-  /* margin-right: 90px; */
-}
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -528,9 +522,7 @@ h5 {
 .footer-social-link:focus {
   background-color: var(--accent);
 }
-.subscribe {
-  /* width: 100%; */
-}
+
 .subscribe-form {
   width: 100%;
 }
@@ -766,7 +758,7 @@ h5 {
 }
 .modal {
   position: absolute;
-
+  width: 528px;
   top: 50%;
   left: 50%;
   padding-top: 40px;
